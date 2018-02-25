@@ -59,6 +59,7 @@ function! s:set() abort
   let underline      = {'gui': 'underline', 'cterm': 'underline'}
   let undercurl      = {'gui': 'undercurl', 'cterm': 'underline'}
   let boldcurl       = {'gui': 'bold,undercurl', 'cterm': 'bold,underline'}
+  let boldunderline  = {'gui': 'bold,underline', 'cterm': 'bold,underline'}
 
   let highlight_group = {}
   if &background ==# 'light'
@@ -130,7 +131,7 @@ function! s:set() abort
     let highlight_group.Todo         = [dobunezumi,   kanzo,       none,      none]
 
     "*** Settings for plugin ***"
-    let highlight_group.MatchParen   = [none,         tamago,      none,      none]
+    let highlight_group.MatchParen   = [none, none, boldunderline, none]
 
     let bg_none    = {'gui': wakame.gui, 'cterm': 'NONE'}
   else
@@ -202,7 +203,7 @@ function! s:set() abort
     let highlight_group.Todo         = [sakurairo,    tuyukusa,    none,      none]
 
     "*** Settings for plugin ***"
-    let highlight_group.MatchParen   = [none,         tuyukusa,    none,      none]
+    let highlight_group.MatchParen   = [none, none, boldunderline, none]
 
     let bg_none    = {'gui': oitake.gui, 'cterm': 'NONE'}
   endif
