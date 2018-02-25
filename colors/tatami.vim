@@ -86,6 +86,8 @@ function! s:set() abort
     let highlight_group.StatusLine   = [nanohana,     rokusho,     none,      none]
     let highlight_group.StatusLineNC = [wakatake,     rokusho,     none,      none]
     let highlight_group.WildMenu     = [rokusho,      nanohana,    bold,      none]
+    let highlight_group.StatusLineTerm = highlight_group.StatusLine
+    let highlight_group.StatusLineTermNC = highlight_group.StatusLineNC
     " Tabline
     let highlight_group.TabLine      = [wakatake,     rokusho,     none,      none]
     let highlight_group.TabLineSel   = [nanohana,     rokusho,     bold,      none]
@@ -158,6 +160,8 @@ function! s:set() abort
     let highlight_group.StatusLine   = [nanohana,     mushiao,     none,      none]
     let highlight_group.StatusLineNC = [oitake,       mushiao,     none,      none]
     let highlight_group.WildMenu     = [mushiao,      nanohana,    bold,      none]
+    let highlight_group.StatusLineTerm = highlight_group.StatusLine
+    let highlight_group.StatusLineTermNC = highlight_group.StatusLineNC
     " Tabline
     let highlight_group.TabLine      = [sakurairo,    mushiao,     none,      none]
     let highlight_group.TabLineSel   = [nanohana,     mushiao,     bold,      none]
